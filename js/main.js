@@ -63,20 +63,37 @@ function setErrorFor(input, mensaje){
     const small = formControl.querySelector('small');
     
     small.innerText = mensaje;
-    formControl.className = 'form-control error'
+    formControl.className = 'form-control error';
 }
 
 function setSuccessFor(input){
     const formControl = input.parentElement;
-    formControl.className = 'form-control success'
+    formControl.className = 'form-control success';
 }
 
 function setSuccessMsg(input){
     const formControl = input.parentElement;
-    formControl.className = 'ok success'
+    formControl.className = 'ok success';
 }
 
 function isEmail(email){
     return /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/.test(email);
 }
 // ---    ---    ---
+
+// --- NAVBAR ---
+const menu = document.querySelector('.header .nav-bar .menu');
+const nav = document.querySelector('.header .nav-bar nav');
+
+menu.addEventListener('click', () => {
+    classToogle(menu, nav);
+});
+
+function classToogle(menu, nav){
+    menu.classList.toggle = 'menu close';
+    nav.classList.toggle = 'nav-toggle';
+    console.log(menu, nav)
+}
+
+
+ 

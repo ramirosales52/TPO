@@ -7,6 +7,7 @@
 html{
     font-size: 11px;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 a{
@@ -32,38 +33,96 @@ p{
 #header .header{
     min-height: 6vh;
     background-color: #fff;
+    padding: 1rem 0;
+    margin: 0 auto;    
+    font-size: 2rem;
 }
 
-#header .navbar{
+#header .header header{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    max-width: 1300px;
-    padding: 0 10px;
-}
-#header .nav-links ul{
-    list-style: none;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
+    padding: 0 40px;
 }
 
-#header .nav-links ul a{
-    font-size: 1.8rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
+#header header .logo img{
+    height: 3.5rem;
+}
+
+#header .nav-bar nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    position: absolute;
+    top: 68px;
+    background-color: gray;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0;
+    transition: 0.5s ease-in-out all;
+    transform: translateX(100%)!important;
+}
+
+#header .header .nav-bar nav.nav-toggle{
+    transform: translateX(0)!important;
+}
+
+#header header .nav-bar .nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header header .nav-bar .nav-list li{
+    padding: 5px 0;
+}
+
+#header header .nav-bar .nav-list li a{
+    font-size: 5rem;
+    font-weight: 500;
     text-decoration: none;
     color: #423086;
-    padding: 15px;
-    display: block;
+    text-transform: uppercase;
 }
+
+#header .header .nav-bar .menu{
+    display: inline-block;
+    cursor: pointer; 
+    padding: 20px;
+}
+
+#header .header .nav-bar .menu .bar{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    transition: .5s ease all;
+}
+
+#header .header .nav-bar .menu .bar::before,
+#header .header .nav-bar .menu .bar::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    transition: .5s ease all;
+}
+
+#header .header .nav-bar .menu .bar::before{
+    top: -7px;
+    left: 0;
+}
+
+#header .header .nav-bar .menu .bar::after{
+    bottom: -7px;
+    left: 0;
+}
+
 /* fin NavBar */
 
 /* Inicio */
@@ -89,6 +148,7 @@ p{
 
 #hero .adopta{
     padding: 0 60px;
+    z-index: -1;
 }
 
 #hero h1{
@@ -239,6 +299,7 @@ p{
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
     width: 600px;
     height: 100%;
+    z-index: -1;
 }
 
 #form .form-title{
