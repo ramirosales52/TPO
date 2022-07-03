@@ -82,18 +82,17 @@ function isEmail(email){
 // ---    ---    ---
 
 // --- NAVBAR ---
-const menu = document.querySelector('.header .nav-bar .menu');
-const nav = document.querySelector('.header .nav-bar nav');
 
-menu.addEventListener('click', () => {
-    classToogle(menu, nav);
-});
+const hamburguer = document.querySelector('.header .nav-bar .nav-list .hamburguer');
+const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const header = document.querySelector('.header.container');
 
-function classToogle(menu, nav){
-    menu.classList.toggle = 'menu close';
-    nav.classList.toggle = 'nav-toggle';
-    console.log(menu, nav)
+hamburguer.onclick = function(){
+    hamburguer.classList.toggle('active')
+    mobile_menu.classList.toggle('active')
 }
+
+// }
 
 
  
