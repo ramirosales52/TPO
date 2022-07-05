@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    
 }
 
 body{
     background-color: #f9f9f9;
+    /* overflow-x: hidden; */
 }
 
 hr{
@@ -16,7 +17,6 @@ hr{
 html{
     font-size: 11px;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
 }
 
 a{
@@ -230,9 +230,8 @@ p{
 }
 
 .app-img{
-    width: auto;
+    width: 100%;
     height: auto;
-    max-width: 600px;
 }
 
 /* fin Inicio */
@@ -323,6 +322,7 @@ p{
 #form .google-play h1{
     color: #423086;
     margin-right: 30px;
+    font-size: 4rem;
 }
 
 #form .form-container{
@@ -487,14 +487,13 @@ p{
     align-items: center;
     justify-content: space-between;
     padding: 0 300px;
-}
-
-#form .google-play h1{
-    font-size: 4rem;
+    flex-wrap: wrap;
 }
 
 #form .google-logo img{
-    height: 100px;
+    height: auto;
+    width: 100%;
+    min-width: 200px;
 }
 /* fin Form */
 
