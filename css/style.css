@@ -5,13 +5,12 @@
     
 }
 
-body{
-    background-color: #f9f9f9;
-    /* overflow-x: hidden; */
-}
-
 hr{
     opacity: 0.2;
+}
+
+body{
+    background-color: #f9f9f9;
 }
 
 html{
@@ -68,7 +67,6 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden;
     z-index: 1;
     transition: .5s ease-in-out left;
 }
@@ -124,6 +122,7 @@ p{
     height: 60px;
     width: 60px;
     transform: scale(.8);
+    overflow-x: hidden;
 }
 
 #header .hamburguer .bar{
@@ -229,7 +228,7 @@ p{
     box-shadow: 0px 0px 26px -4px #7763c2;    
 }
 
-.app-img{
+#hero .app-img{
     width: 100%;
     height: auto;
 }
@@ -237,6 +236,10 @@ p{
 /* fin Inicio */
 
 /* About */
+#about{
+    background-color: #fff;
+}
+
 #about .about{
     flex-direction: column;
     text-align: center;
@@ -486,14 +489,15 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 300px;
-    flex-wrap: wrap;
+    padding: 30px 0;
+    flex-direction: column;
 }
 
 #form .google-logo img{
     height: auto;
     width: 100%;
-    min-width: 200px;
+    min-width: 100px;
+    max-width: 200px;
 }
 /* fin Form */
 
