@@ -257,7 +257,7 @@ p{
 }
 
 #about .about-top{
-    width: 500px;
+    width: 100%;
     max-width: 0 auto;
     padding: 0px 20px;
     display: flex;
@@ -320,7 +320,8 @@ p{
 }
 
 #form .form{
-    width: 100%;
+    
+    max-width: 600px;
 }
 
 #form .google-play h1{
@@ -339,7 +340,7 @@ p{
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
-    max-width: 600px;
+    width: 100%;
     height: 100%;
 }
 
