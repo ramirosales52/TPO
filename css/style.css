@@ -267,7 +267,7 @@ p{
 }
 
 #about .about-top p{
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 500;
@@ -282,6 +282,7 @@ p{
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 80px;
+    width: 100%;
     
 }
 
@@ -307,6 +308,10 @@ p{
 
 #about .about-item i{
     color: #423086;
+}
+
+#about .about-item img{
+    max-height: 180px;
 }
 /* fin About */
 

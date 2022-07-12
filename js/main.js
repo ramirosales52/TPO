@@ -1,13 +1,3 @@
-//     ---NAV BAR (active element)---
-const activePage = window.location.pathname;
-
-const navLinks = document.querySelectorAll('nav div a').forEach(link => {
-    if(link.href.includes(`${activePage}`)){
-        link.classList.add('active');
-    };
-})
-//   ---          ---             ---
-
 // FORM VALIDATION
 const form = document.getElementById('formulario');
 const name = document.getElementById('name');
